@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            background-color: rgb(162, 201, 69);
+        }
+        div {
+            background-color: rgb(186, 142, 75);
+            width: 400px;
+            color: rgb(33, 31, 31);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="number"] {
+            width: 60px;
+            text-align: center;
+            font-size: 18px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1> == Calculadora == </h1> 
+        <button onclick="soma()">Soma</button>
+        <button onclick="sub()">Subtração</button>
+        <button onclick="mult()">Multiplicar</button>
+        <button onclick="div()">Dividir</button>
+        <br><hr> 
+        <input type="number" name="n1t" id="n1t"> 
+        <span id="operador">+</span> 
+        <input type="number" name="n2t" id="n2t">
+        <h2 id="resp">Resultado: </h2>
+    </div>
+
+    <script>
+        function atualizarOperador(op) {
+            document.getElementById("operador").textContent = op;
+        }
+
+        function soma() {
+            atualizarOperador("+");
+            var a = Number(document.getElementById("n1t").value);
+            var b = Number(document.getElementById("n2t").value);
+            var c = document.getElementById("resp");
+            var s = a + b;
+            if (s < 10) {
+                c.style.backgroundColor = "green";
+            } else if (s >= 10 && s <= 20) {
+                c.style.backgroundColor = "blue";
+            } else {
+                c.style.background = "red";
+            }
+            c.innerHTML = `Resultado: ${s}`;
+        }
+
+        function sub() {
+            atualizarOperador("-");
+            var a = Number(document.getElementById("n1t").value);
+            var b = Number(document.getElementById("n2t").value);
+            var c = document.getElementById("resp");
+            var s = a - b;
+            if (s < 10) {
+                c.style.backgroundColor = "green";
+            } else if (s >= 10 && s <= 20) {
+                c.style.backgroundColor = "blue";
+            } else {
+                c.style.background = "red";
+            }
+            c.innerHTML = `Resultado: ${s}`;
+        }
+
+        function mult() {
+            atualizarOperador("×");
+            var a = Number(document.getElementById("n1t").value);
+            var b = Number(document.getElementById("n2t").value);
+            var c = document.getElementById("resp");
+            var s = a * b;
+            if (s < 10) {
+                c.style.backgroundColor = "green";
+            } else if (s >= 10 && s <= 20) {
+                c.style.backgroundColor = "blue";
+            } else {
+                c.style.background = "red";
+            }
+            c.innerHTML = `Resultado: ${s}`;
+        }
+
+        function div() {
+            atualizarOperador("÷");
+            var a = Number(document.getElementById("n1t").value);
+            var b = Number(document.getElementById("n2t").value);
+            var c = document.getElementById("resp");
+            if (b !== 0) {
+                var s = a / b;
+                if (s < 10) {
+                    c.style.backgroundColor = "green";
+                } else if (s >= 10 && s <= 20) {
+                    c.style.backgroundColor = "blue";
+                } else {
+                    c.style.background = "red";
+                }
+                c.innerHTML = `Resultado: ${s}`;
+            } else {
+                c.innerHTML = "Resultado: Divisão por zero não é permitida.";
+            }
+        }
+    </script>
+</body>
+</html>

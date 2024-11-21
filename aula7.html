@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .país {
+            background-color: aquamarine;
+            width: 200pt;
+            padding: 20pt;
+            border: 5px solid brown;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: lightgreen;
+            border: none;
+        }
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+        h2 {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="país">
+        <h1>Qual é seu país?</h1>
+        <br>
+        <input type="text" name="ps" id="ps" placeholder="Seu país...">
+        <button type="button" onclick="pais()">Enviar</button>
+        <h2 id="resp">Resposta:</h2>
+    </div>
+
+    <script>
+        function pais() {
+            var a = document.querySelector("input#ps").value;
+            var b = document.getElementById("resp");
+            if(a === "Brasil") {
+                b.innerHTML = "Você é Brasileiro";
+                b.style.background = "yellow";
+            } else {
+                b.innerHTML = "Você é Estrangeiro";
+                b.style.background = "red";
+            }
+        }
+    </script>
+</body>
+</html>

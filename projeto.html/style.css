@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+}
+@font-face{
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+
+}
+
+body{
+    background-color: #84E1AD;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+header{
+    background-image: linear-gradient(to bottom,#37C777,#1A5D38);
+    color:#9AB8A7;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.856);
+}
+.navs{
+    margin-top: 15px;
+    text-align: left; 
+    
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(19, 23, 27, 0.577);
+    
+}
+.navs > a{
+    color: beige;
+    padding-right: 30px;
+    text-decoration: none;
+}
+.navs a:hover{
+    color: rgba(0, 0, 0, 0.573);
+    text-decoration:underline;
+}
+
+header > h1{
+    font-size: 2.5em;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+}
+header > p{
+    margin-top: 25px;
+    
+}
+
+section{
+    padding: 15px;
+    margin: auto;
+    max-width: 90%;
+    width: 900px;
+    background-color: white;
+    border-radius: 0px;
+    
+}
+.ultima{
+    border-radius: 0px 0px  10px 10px;
+}
+section > h2{
+    color: #21613D;
+    font-family: 'idroid';
+    
+}
+.robo{
+    margin-top: 15px;
+    background-color: #E2F6EA;
+    color: #21613D;
+    font-family: "idroid";
+    font-weight: normal;
+    
+}
+article > p{
+    margin-top: 15px;
+    text-align: justify;
+    margin-bottom: 5px;
+    text-indent: 15pt;
+}
+article > img{
+    width: 900px;
+    
+}
+.imgs > img{
+    height: 250px;
+    margin: auto;
+    margin-left: 25%;
+    
+}
+.videos {
+    padding: 30px;
+    margin: auto;
+    background-color: #1A5C38;
+    max-width: 90%;
+    width: 870px;
+
+}
+.videos>iframe{
+    height:350px;
+    width: 100%;
+    
+}
+.pd{
+    background-color: #C5EBD6;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    
+
+}
+.cord{
+    background-color: #2FA866;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+footer{
+    padding: 5px;
+    color: #9AB8A7;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #1A5C38;
+}
+.ulti> p {
+    margin-top: 15px;
+}
+.qw{
+    color: white;
+    font-weight: bolder;
+}
+.ultima div {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.ultima ul {
+list-style-type: none;  
+padding: 10px; 
+margin: 0; 
+width: 45%; 
+}
+.lista{
+font-weight: bolder;
+}
+.ultima ul li a {
+color: #000; 
+}
+
+.ultima ul li a:hover {
+text-decoration: underline; 
+color: rgb(66, 65, 65);
+}
+.format{
+    color: #21613D;
+    text-decoration: none;
+}
+.format:hover{
+    text-decoration:underline;
+}

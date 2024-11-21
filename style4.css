@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
+
+body{
+    font-size: 15pt;
+    background-image: linear-gradient(to right,black,blue);
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 5px rgb(1, 1, 1);
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(144, 165, 42);
+    box-shadow: 15px 15px 10px rgb(10, 16, 72);
+  
+}
+
+.aqw{
+    margin: auto;
+    background-color: rgba(79, 101, 131, 0.257);
+    padding: 20px;
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    border: 5px solid white;
+
+}
+.aqw img {
+    padding: 5px;
+    border: 2pt solid rgb(103, 87, 87);
+    border-radius: 15px;
+    width: 300px;
+    height: 175px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    
+}
+.voltar{
+    width: 50;
+    height: 50px;
+    
+}
+.voltar:hover{
+    transform: scale(1.10); /
+}
+p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: scale(1.05);
+}
+h1{
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    
+}
+
+h1:hover {
+    font-weight: bold;
+    background-image: linear-gradient(to right, red, orange, yellow, blue, purple);
+    -webkit-background-clip: text; /* Aplica o fundo ao texto */
+    -webkit-text-fill-color: transparent; /* Substitui a cor do texto pelo fundo */
+}
+
+
+.aqw img:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+a, h1, .aqw img {
+    transition: all 0.3s ease;
+}
+
+
+
