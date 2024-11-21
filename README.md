@@ -1,2 +1,2 @@
 # HTML-CSS-JavaScript
- exercidos 
+ exercícios 
