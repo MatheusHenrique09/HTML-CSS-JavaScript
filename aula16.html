@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+     
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(2n){
+            background-color: rgba(119, 136, 153, 0.381);
+        }
+        td:nth-child(4){
+            text-align: right;
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grades</h1>
+    <table>
+        <caption>
+            População das unidades Federais
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Código</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>3550308</td>
+                <td>São Paulo</td>
+                <td>11 451 999</td>
+            </tr>
+
+            <tr>
+                <td>2º</td>
+                <td>3304557</td>
+                <td>Rio de Janeiro</td>
+                <td>6 211 223</td>    
+            </tr>
+
+            <tr>
+                <td>3º</td>
+                <td>5300108</td>
+                <td>Distrito Federal</td>
+                <td>2 817 381</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>2304400	</td>
+                <td> Ceará</td>
+                <td>2 428 708</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>2927408</td>
+                <td>Bahia</td>
+                <td>2 417 678</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>3106200</td>
+                <td> Minas Gerais</td>
+                <td>2 315 560</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td id="total">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
