@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+html,body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    background-image: url("imagens/bg-3.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: right center; 
+    padding: 1px;
+}
+div{
+    margin: 50px auto 0;
+    width: 80%;
+    text-align: center;
+}
+.hero nav li{
+    margin: 20px 20px 0 0;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.181);
+    border: 2px solid white;
+    
+}
+
+.hero nav li a{
+    color: white;
+    text-decoration:none;
+
+}
+.hero nav li:hover{
+    background-color: rgba(0, 0, 0, 0.677);
+}
+
+header h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    font-size: 3em;
+}
+
+header h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.32);
+    padding: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+section{
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    min-width: 300px;
+}
+
+article{
+    background-color: white;
+    padding: 5px;
+    margin-top:20px;
+}
+
+article h2{
+    margin-top: 5px;
+    background-color: lightgray;
+    padding: 5px;
+    border-bottom: 2px solid rgb(147, 147, 147);
+}
+
+article a{
+    padding: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: none;
+} 
+article a:hover{
+    background-color: rgb(104, 104, 104);
+    text-decoration: underline;
+}  
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px;
+   
+}
