@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+        input[type="submit"]:focus, input[type="reset"]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulário de Cadastro</h1>
+    <form action="processa_formulario.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="inome">Nome:</label>
+            <input type="text" id="inome" name="nome" placeholder="Seu nome..." maxlength="50" required>
+
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" id="isobrenome" name="sobrenome" placeholder="Seu sobrenome..." maxlength="50" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <div class="radio-group">
+                <input type="radio" name="sexo" id="mas" value="M" required>
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="sexo" id="fem" value="F" required>
+                <label for="fem">Feminino</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço Digital</legend>
+            <label for="iemail">E-mail:</label>
+            <input type="email" id="iemail" name="email" placeholder="Seu e-mail..." required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data de Nascimento</legend>
+            <label for="inasc">Data:</label>
+            <input type="date" id="inasc" name="nasc" min="1900-01-01" max="2024-12-31" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="itel">Telefone:</label>
+            <input type="tel" id="itel" name="tel" pattern="^\(\d{2}\)\d{4}-\d{4}$" placeholder="(xx)xxxx-xxxx" title="Formato esperado: (xx)xxxx-xxxx" required>
+
+            <label for="icel">Celular:</label>
+            <input type="tel" id="icel" name="cel" pattern="^\(\d{2}\)\d{5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" title="Formato esperado: (xx)xxxxx-xxxx" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="irua">Rua:</label>
+            <input type="text" id="irua" name="rua" placeholder="Seu endereço completo..." required>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
